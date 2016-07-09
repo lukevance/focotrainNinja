@@ -5,6 +5,6 @@ angular.module('templateApp')
 
 function MainController () {
   var vm = this;
-  vm.title = 'Do you want to go to Jamaica?';
-  vm.subtitle = 'Of course you do!';
+  vm.title = 'Angular Template App';
+  vm.subtitle = 'Welcome to Angular!';
 }
