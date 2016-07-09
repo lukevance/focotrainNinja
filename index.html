@@ -17,8 +17,11 @@
         <div class="col-md-6 col-md-offset-3">
           <form class="text-center" action="index.html" method="post">
             <div class="form-group">
-              <label for="enter">Go to Jamaica Mon</label>
-              <input type="button" class="btn btn-default" name="enter" id="enter" value="Enter">
+              <label for="enter">
+                {{ MC.cur }}
+              </label>
+              <input type="text">
+              <input type="button" class="btn btn-default" name="enter" id="enter" value="Enter" ng-click="MC.change()">
             </div>
           </form>
         </div>
