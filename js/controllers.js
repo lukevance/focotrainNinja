@@ -4,6 +4,7 @@ angular.module('templateApp')
 
 function MainController () {
   var vm = this;
+  vm.input = "";
   vm.curIndex = 0;
   vm.questions = [
     "Are you sure?",
@@ -18,6 +19,7 @@ function MainController () {
     console.log("clicked");
     vm.curIndex++;
     vm.cur = vm.questions[vm.curIndex];
+    vm.input = "";
   };
 
 }
