@@ -1,37 +1,47 @@
 <!DOCTYPE html>
 <html ng-app="templateApp">
-  <head>
-    <meta charset="utf-8">
-    <title>Angular Template</title>
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-  </head>
-  <body ng-controller="MainController as MC">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-12">
-          <h1 class="text-center" >FoCo Trainnin' Ja</h1>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-6 col-md-offset-3">
-          <form class="text-center" action="index.html" method="post">
-            <div class="form-group">
-              <label for="enter">
-                {{ MC.cur }}
-              </label>
-              <input id="thing" type="text" ng-model="vm.input">
-              <input type="button" class="btn btn-default" name="enter" id="enter" value="Enter" ng-click="MC.change()">
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
 
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.1/angular.min.js" charset="utf-8"></script>
-    <script src="./js/app.js"></script>
-    <script src="./js/controllers.js"></script>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="./css/main.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <title>Angular Template</title>
+</head>
+
+<body ng-controller="MainController as MC">
+  <img src="../imgs/jamaica_background.jpg" class="background-img">
+  <title>Angular Template</title>
+  <!-- Latest compiled and minified CSS -->
+
+  <link rel="stylesheet" href="css/main.css" media="screen" title="no title" charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+
+    <body ng-controller="MainController as MC">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <h1 class="text-center">FoCo Trainnin' Ja</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3">
+            <form class="text-center" action="index.html" method="post">
+              <div class="form-group">
+                <label for="enter">
+                  {{ MC.cur }}
+                </label>
+                <input id="thing" type="text" ng-model="vm.input">
+                <input type="button" class="btn btn-default" name="enter" id="enter" value="Enter" ng-click="MC.change()">
+              </div>
+          </div>
+
+          <!-- Latest compiled and minified JavaScript -->
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+          <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.1/angular.min.js" charset="utf-8"></script>
+          <script src="./js/app.js"></script>
+          <script src="./js/controllers.js"></script>
+    </body>
+
 </html>

@@ -2,20 +2,22 @@
 angular.module('templateApp')
   .controller('MainController', [MainController]);
 
-function MainController () {
+function MainController() {
   var vm = this;
   vm.input = "";
   vm.curIndex = 0;
   vm.questions = [
-    "Are you sure?",
-    "Ya like rum mon?",
-    "What's your zip?",
-    "D'ya wanna leave today mon?",
-    "Wanna take a train mon?"
+    "Wanna take a train mon?",
+    "Wassya name mon?",
+    "How d'ya identify mon? (M/F/*)",
+    "Gimme ya digits mon?",
+    "Wassya address mon?",
+    "Howabowt ya email mon?",
+    "Ya sure yawanna go to Jamaica?",
+    "YA CAHNT TAKE A TRAIN TO JAMAICA MON!"
   ];
-
   vm.cur = vm.questions[0];
-  vm.change = function(){
+  vm.change = function() {
     console.log("clicked");
     vm.curIndex++;
     vm.cur = vm.questions[vm.curIndex];
