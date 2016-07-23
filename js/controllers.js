@@ -7,6 +7,9 @@ function MainController() {
   vm.input = "";
   vm.curIndex = 0;
   vm.questions = [
+    "",
+    "No problem mon, can you ansah some questions?",
+    "Yawanna leave today mon?",
     "Wanna take a train mon?",
     "Wassya name mon?",
     "How d'ya identify mon? (M/F/*)",
@@ -23,5 +26,5 @@ function MainController() {
     vm.cur = vm.questions[vm.curIndex];
     vm.input = "";
   };
-
+  console.log(vm.curIndex);
 }

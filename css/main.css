@@ -3,9 +3,74 @@
   width: 100%;
   position: absolute;
 }
-.text-center{
+
+.title {
+   margin-top: 5rem;
    font-family: "Arial Black", Gadget, sans-serif;
    color:White;
    font-size: 70px;
    text-shadow: 3px 3px 5px blue;
+}
+
+.take-me {
+  margin-top: 10rem;
+}
+
+.form-container {
+  margin-top: 10rem;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+.step-one {
+  /*background-color: rgb(139, 139, 139);*/
+  opacity: .5;
+  padding: 2rem;
+}
+
+.step-one-title {
+  opacity: 1 !important;
+}
+
+.step-one:hover {
+  opacity: .8;
+  cursor: pointer;
+}
+
+.questions {
+  font-size: 22pt;
+  color: rgb(58, 133, 153);
+  display: block;
+  margin-bottom: 3rem;
+}
+
+.input {
+  color: rgb(96, 96, 96);
+  text-align: center;
+  margin-left: 25%;
+  font-weight: bold;
+  margin-bottom: 3rem;
+  max-width: 50%;
+  display: block;
+}
+
+.enter {
+  font-size: 22pt;
+  color: rgb(58, 133, 153);
+}
+
+.btn:focus {
+  outline: none;
+
+}
+
+
+.yes {
+  background-color: rgb(58, 133, 153);
+  color: rgb(255, 255, 255);
+}
+
+.yes:focus {
+  background-color: rgb(58, 133, 153);
+  color: rgb(255, 255, 255);
 }
